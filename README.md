@@ -1,5 +1,19 @@
 # ProcessInjectionTool
 Process injection tool, in order to explain how different process injection methods works and cool tricks with WINAPI.
+
+## Applications, Processus and Threads
+
+There are 3 differents important names that you must understand in Windows before starting explaining injection.
+Applications is the main name that you give to an executable, for example firefox.exe.
+Processus is the name you give of each instances of the application.
+Thread is the name you give to sequences of instructions that can be managed independently.
+
+An application can have 1 or more process running.
+Each process have at least 1 thread or more.
+
+![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/threads_process_and_apps.png
+ "AppsProcessusThreads")
+
 ## What is process injection ?
 Process injection is a name given to the action of injecting remote code in another process.
 For example, you take 2 processus, the injector named injector.exe and a classic text editor named notepad.exe.
