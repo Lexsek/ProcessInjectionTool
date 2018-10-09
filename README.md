@@ -84,5 +84,7 @@ Classic Injection :
 
 
 RunPE (Process Hollowing) :
+
 Process Doppelgänging :
+
 Ctrl-Inject : 
