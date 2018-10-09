@@ -19,22 +19,28 @@ Each process have at least 1 thread or more.
 There are some windows structures that you must understand aswell.
 TEB : Thread Environment Block
     The Thread Environment Block (TEB) structure describes the state of a thread. It is accessible from the FS segment register. 
-![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/TEB.bmp "TEB")
+![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/TEB.bmp
+"TEB")
 PEB : Process Environment Block
     The Process Environment Block (PEB) is a user-mode data structure that can be used by applications (and by extend by malware) to get information such as the list of loaded modules, process startup arguments, heap address, check whether program is being debugged, find image base address of imported DLLs, ...
-![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/PB.bmp "PEB")
+![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/PB.bmp 
+"PEB")
 PEB_LDR_DATA :
     The PEB_LDR_DATA structure is a structure that contains information about all of the loaded modules in the current process. 
-![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/PEB_LDR_DATA.bmp "PEB_LDR_DATA")
+![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/PEB_LDR_DATA.bmp
+"PEB_LDR_DATA")
 LIST_ENTRY :
     A LIST_ENTRY structure describes an entry in a doubly linked list or serves as the header for such a list.
-![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/LIST_ENTRY.bmp "LIST_ENTRY")
+![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/LIST_ENTRY.bmp 
+"LIST_ENTRY")
     Flink : For a LIST_ENTRY structure that serves as a list entry, the Flink member points to the next entry in the list or to the list header if there is no next entry in the list. For a LIST_ENTRY structure that serves as the list header, the Flink member points to the first entry in the list or to the LIST_ENTRY structure itself if the list is empty.
     Blink : For a LIST_ENTRY structure that serves as a list entry, the Blink member points to the previous entry in the list or to the list header if there is no previous entry in the list. For a LIST_ENTRY structure that serves as the list header, the Blink member points to the last entry in the list or to the LIST_ENTRY structure itself if the list is empty.
-![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/LIST_ENTRY2.bmp "LIST_ENTRY2")
+![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/LIST_ENTRY2.bmp 
+"LIST_ENTRY2")
 LDR_DATA_TABLE_ENTRY :
     LDR_DATA_TABLE_ENTRY structure contains informations about a module.
-![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/LDR_DATA_TABLE_ENTRY.bmp "LDR_DATA_TABLE_ENTRY")
+![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/LDR_DATA_TABLE_ENTRY.bmp 
+"LDR_DATA_TABLE_ENTRY")
 PROCESS_ENTRY :
 
 ## What is process injection ?
