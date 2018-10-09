@@ -74,3 +74,15 @@ The objective of injector.exe is to write in the process memory of the notepad.e
 "Injection 3")
 
 Malicious actions will now be executed by notepad.exe, that is quite interesting. Here we used notepad.exe as an example, but imagine a malicious code injecting himself into explorer.exe and reading sensitive file system files, logging them, or injecting into firefox to send the keylogging to the C&C server of the attaquant as firefox is making a lot of network connections.
+
+## Different injection types
+
+Here I've develloped a C program doing each cases of injection.
+We will see 4 different techniques, in my C program, and also in the x86 version of it like a reverse-engineer would see my program if he had to reverse it.
+
+Classic Injection :
+
+
+RunPE (Process Hollowing) :
+Process Doppelgänging :
+Ctrl-Inject : 
