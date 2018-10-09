@@ -55,6 +55,10 @@ LDR_DATA_TABLE_ENTRY :
 "LDR_DATA_TABLE_ENTRY")
 
 PROCESS_ENTRY :
+    Describes an entry from a list of the processes residing in the system address space when a snapshot was taken.
+    
+![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/LDR_DATA_TABLE_ENTRY.bmp 
+"LDR_DATA_TABLE_ENTRY")
 
 ## What is process injection ?
 
