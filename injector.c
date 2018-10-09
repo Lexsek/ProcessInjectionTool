@@ -3,11 +3,10 @@
 #include <stdio.h>
 
 int CrawlProcess(int pid) {
-	DWORD LastErr;
 	PROCESSENTRY32 pe32;
 	HANDLE CThp32 = CreateToolhelp32Snapshot(TH32CS_SNAPPROCESS, NULL);
-	if (LastErr = GetLastError() != 0) {
-		printf("[!] CreateToolhelp32Snapshot : Error %d\n", LastErr);
+	if (GetLastError() != 0) {
+		printf("[!] CreateToolhelp32Snapshot : Error %d\n", GetLastError());
 	}
 	else {
 		pe32.dwSize = sizeof(PROCESSENTRY32);
