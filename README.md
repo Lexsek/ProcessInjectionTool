@@ -100,7 +100,7 @@ The first step on injection is to find the process you want to open and it's PID
 In my exercise tool, I'm doing a crawl of the process in order to find if the specified PID in the console is valid or not.
 (If a process with this PID is currently running on my computer).
 
-C Code :
+#### C Code :
 
 ![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/c_crawlprocess.png
 "C crawl process")
@@ -121,12 +121,10 @@ If the call is sucessful, I'm finally calling Process32Next that retrieves infor
 
 If the current snapshot of the process is matching the given pid during the loop, I return 0.
 
-Asm Code :
+#### Asm Code :
 
 ![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/asm_crawlprocess.png
 "ASM crawl process")
-
-
 
 ### Classic Injection :
 
