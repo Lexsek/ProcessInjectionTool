@@ -81,7 +81,10 @@ Here I've develloped a C program doing each cases of injection.
 We will see 4 different techniques, in my C program, and also in the x86 version of it like a reverse-engineer would see my program if he had to reverse it.
 
 The first step on injection is to find the process you want to open and it's PID.
-TODO : code C, code x86
+In my exercise tool, I'm doing a crawl of the process in order to find if the specified PID in the console is valid or not.
+
+![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/c_crawlprocess.png
+"C crawl process")
 
 #Classic Injection :
 
