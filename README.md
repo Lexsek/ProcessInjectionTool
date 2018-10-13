@@ -143,6 +143,14 @@ Execute the shellcode you've injected calling CreateRemoteThread (Creates a thre
 ![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/c_classicinjection.png
 "C classic injection")
 
+#### ASM code :
+
+![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/asm_classicinjection1.png
+"ASM classic injection 1")
+
+![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/asm_classicinjection2.png
+"ASM classic injection 2")
+
 ### RunPE (Process Hollowing) :
 
 ### Process Doppelgänging :
