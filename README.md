@@ -130,22 +130,29 @@ If the current snapshot of the process is matching the given pid during the loop
 
 Classic injection is quite easy, after you found the good PID you have to:
 
-Open the process with OpenProcess,
+Open the process with OpenProcess (Opens an existing local process object),
 
-Allocate memory inside it using VirtualAllocEx,
+Allocate memory inside it using VirtualAllocEx (Reserves, commits, or changes the state of a region of memory within the virtual address space of a specified process. The function initializes the memory it allocates to zero),
 
-Write memory inside it using WriteProcessMemory,
+Write memory inside it using WriteProcessMemory (Writes data to an area of memory in a specified process. The entire area to be written to must be accessible or the operation fails),
 
-Execute the shellcode you've injected calling CreateRemoteThread.
+Execute the shellcode you've injected calling CreateRemoteThread (Creates a thread that runs in the virtual address space of another process).
 
 #### C code :
 
 ![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/c_classicinjection.png
 "C classic injection")
 
-
 ### RunPE (Process Hollowing) :
 
 ### Process Doppelgänging :
 
 ### Ctrl-Inject : 
+
+# TODO
+
+What is a shellcode ?
+Other injections
+Win32 / 64 Injections
+Privilege levels required / when
+API functions parameters explained
