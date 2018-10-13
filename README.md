@@ -55,6 +55,10 @@ LDR_DATA_TABLE_ENTRY :
 "LDR_DATA_TABLE_ENTRY")
 
 PROCESS_ENTRY :
+    Describes an entry from a list of the processes residing in the system address space when a snapshot was taken.
+    
+![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/PROCESS_ENTRY.bmp 
+"PROCESS_ENTRY")
 
 ## What is process injection ?
 
@@ -70,3 +74,26 @@ The objective of injector.exe is to write in the process memory of the notepad.e
 "Injection 3")
 
 Malicious actions will now be executed by notepad.exe, that is quite interesting. Here we used notepad.exe as an example, but imagine a malicious code injecting himself into explorer.exe and reading sensitive file system files, logging them, or injecting into firefox to send the keylogging to the C&C server of the attaquant as firefox is making a lot of network connections.
+
+## Different injection types
+
+Here I've develloped a C program doing each cases of injection.
+We will see 4 different techniques, in my C program, and also in the x86 version of it like a reverse-engineer would see my program if he had to reverse it.
+
+The first step on injection is to find the process you want to open and it's PID.
+TODO : code C, code x86
+
+#Classic Injection :
+
+Classic injection is quite easy, after you found the good PID you have to:
+Open the process with OpenProcess,
+Allocate memory inside it using VirtualAllocEx,
+Write memory inside it using WriteProcessMemory,
+Execute the shellcode you've injected calling CreateRemoteThread.
+
+
+#RunPE (Process Hollowing) :
+
+#Process Doppelgänging :
+
+#Ctrl-Inject : 
