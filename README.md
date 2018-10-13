@@ -138,6 +138,11 @@ Write memory inside it using WriteProcessMemory,
 
 Execute the shellcode you've injected calling CreateRemoteThread.
 
+#### C code :
+
+![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/c_classicinjection.png
+"C classic injection")
+
 
 ### RunPE (Process Hollowing) :
 
