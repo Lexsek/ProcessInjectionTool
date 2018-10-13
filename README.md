@@ -126,7 +126,7 @@ Asm Code :
 
 
 
-#Classic Injection :
+# Classic Injection :
 
 Classic injection is quite easy, after you found the good PID you have to:
 
@@ -139,8 +139,8 @@ Write memory inside it using WriteProcessMemory,
 Execute the shellcode you've injected calling CreateRemoteThread.
 
 
-#RunPE (Process Hollowing) :
+# RunPE (Process Hollowing) :
 
-#Process Doppelgänging :
+# Process Doppelgänging :
 
-#Ctrl-Inject : 
+# Ctrl-Inject : 
