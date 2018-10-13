@@ -93,6 +93,8 @@ Here I've develloped a C program doing each cases of injection.
 
 We will see 4 different techniques, in my C program, and also in the x86 version of it like a reverse-engineer would see my program if he had to reverse it.
 
+### Process Crawling
+
 The first step on injection is to find the process you want to open and it's PID.
 
 In my exercise tool, I'm doing a crawl of the process in order to find if the specified PID in the console is valid or not.
@@ -126,7 +128,7 @@ Asm Code :
 
 
 
-# Classic Injection :
+### Classic Injection :
 
 Classic injection is quite easy, after you found the good PID you have to:
 
@@ -139,8 +141,8 @@ Write memory inside it using WriteProcessMemory,
 Execute the shellcode you've injected calling CreateRemoteThread.
 
 
-# RunPE (Process Hollowing) :
+### RunPE (Process Hollowing) :
 
-# Process Doppelgänging :
+### Process Doppelgänging :
 
-# Ctrl-Inject : 
+### Ctrl-Inject : 
