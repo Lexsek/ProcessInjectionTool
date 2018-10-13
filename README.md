@@ -121,12 +121,21 @@ If the current snapshot of the process is matching the given pid during the loop
 
 Asm Code :
 
+![alt text](https://raw.githubusercontent.com/Lexsek/ProcessInjectionTool/master/images/asm_crawlprocess.png
+"ASM crawl process")
+
+
+
 #Classic Injection :
 
 Classic injection is quite easy, after you found the good PID you have to:
+
 Open the process with OpenProcess,
+
 Allocate memory inside it using VirtualAllocEx,
+
 Write memory inside it using WriteProcessMemory,
+
 Execute the shellcode you've injected calling CreateRemoteThread.
 
 
