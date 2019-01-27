@@ -153,14 +153,57 @@ Execute the shellcode you've injected calling CreateRemoteThread (Creates a thre
 
 ### RunPE (Process Hollowing) :
 
+Start a process in suspended mode
+
+Unmap it's code from memory
+
+Allocate memory in the process
+
+Write the new payload
+
+Relocate the image
+
+Change base address in the PEB
+
+Set thread context
+
+Resume the thread
+
 ### Process Doppelgänging :
+
+Create a transaction
+
+Open a process file
+
+Overwrite the file with payload
+
+Create a section from the transacted file
+
+Rollback the transaction
+
+Create process and thread objects
+
+Create process parameters
+
+Copy parameters to the newly created process's address space
+
+Resume the process
 
 ### Ctrl-Inject : 
 
+Inject payload with any method
+
+Encode the pointer to the buffer
+
+Make it a valid pointer target
+
+Trigger Ctrl+C event to make csrss.exe resume/start the payload
+
 # TODO
 
-What is a shellcode ?
-Other injections
+What is a shellcode ? Check shellcoding repository
+Other injections : AtomBombing ...
 Win32 / 64 Injections
 Privilege levels required / when
 API functions parameters explained
+C++ code for that
